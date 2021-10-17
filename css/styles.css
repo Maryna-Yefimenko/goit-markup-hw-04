@@ -133,11 +133,7 @@ a {
 
   text-align: center;
 }
-/* linear-gradient( 
-      rgba(47, 48, 58, 0.4),
-      rgba (47, 48, 50, 0.4)
-    ),*/
-/*  background-size: cover;*/
+
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
@@ -194,38 +190,45 @@ a {
   display: flex;
 }
 .list-item {
-  width: 270px;
+  display: inline-block;
+  margin-bottom: 30px;
 }
 .list-item:not(:last-child) {
   margin-right: 30px;
 }
-.list-item::before {
+.list-icons {
+  width: 270px;
+  height: 120px;
+  background-size: 70px;
+  background-position: center;
+  background-color: var(--grey-background-color);
+}
+
+/* .list-item::before {
   display: inline-block;
   content: "";
-  height: 120px;
   width: 270px;
+  height: 120px;
   margin-bottom: 30px;
   background-size: 70px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--grey-background-color);
-}
+} */
+
 /* .list-item:nth-child(1)::before {
   background-image: url("../img/antenna\ 1.svg");
 } */
-.list-item.antenna-icon::before {
-  background-image: url("../img/antenna\ 1.svg");
-}
+
+/* .list-item.antenna-icon::before {
+  background-image: url("../img/antenna\ 1.svg"); }
 .list-item.clock-icon::before {
-  background-image: url("../img/clock\ 1.svg");
-}
+  background-image: url("../img/clock\ 1.svg"); }
 .list-item.diagram-icon::before {
-  background-image: url("../img/diagram\ 1.svg");
-}
+  background-image: url("../img/diagram\ 1.svg"); }
 .list-item.astronaut-icon::before {
-  background-image: url("../img/astronaut\ 1.svg");
-}
-/* padding: 25px 100px; */
+  background-image: url("../img/astronaut\ 1.svg"); }
+ */
 
 .feature-title {
   margin-bottom: 10px;
