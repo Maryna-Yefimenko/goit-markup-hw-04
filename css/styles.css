@@ -85,7 +85,7 @@ a {
   margin-right: 50px;
 }
 .site-nav-link {
-  display: block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -121,6 +121,12 @@ a {
 .contacts-link:focus {
   color: var(--accent-color);
 }
+
+.header-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 /* Стили для index.html */
 /* section Hero */
 
@@ -155,6 +161,7 @@ a {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-align: center;
 }
 
 /* button */
@@ -319,7 +326,17 @@ a {
   color: var(--secondary-text-color);
   font-weight: 400;
 }
-
+/* svg */
+.social-list {
+  display: flex;
+}
+.social-item {
+  display: flex;
+}
+.link {
+  fill: #afb1b8;
+  text-decoration: none;
+}
 /* footer */
 .footer {
   background-color: var(--accent-background-color);
