@@ -5,6 +5,7 @@
   --second-accent-color: #ffffff;
   --black-text-color: #000000;
   --grey-data-color: rgba(255, 255, 255, 0.6);
+  --social-icons-color: #afb1b8;
 
   --primary-background-color: #ffffff;
   --accent-background-color: #2f303a;
@@ -308,27 +309,38 @@ a {
 /* svg */
 .social-list {
   display: flex;
+  padding: 0;
+  margin: 0;
   height: 44px;
   width: 44px;
 }
 .social-item {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-item:not(:last-child) {
+  margin-right: 10px;
 }
 .social-link {
-  display: block;
+  display: flex;
+  padding: 0;
   height: 44px;
   width: 44px;
+  justify-content: center;
+  align-items: center;
 
-  fill: #afb1b8;
-  text-decoration: none;
+  color: var(--social-icons-color);
   background-position: center;
   border: 50%;
+  border-radius: 22px;
+  text-align: center;
 }
-/* .social-link:hover,
-.social-link:focus{
+.social-link:hover,
+.social-link:focus {
   color: var(--second-accent-color);
-  background-color: var(var(--accent-color);
-} */
+  background-color: var(--accent-color);
+}
 
 /* footer */
 .footer {
