@@ -72,11 +72,11 @@ a {
 .navigation {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ececec;
 }
 .main-nav {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 .site-nav {
   display: flex;
@@ -218,40 +218,19 @@ a {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-
   width: 270px;
   height: 120px;
+
   background-color: var(--grey-background-color);
 }
 .icon-feature {
   display: flex;
   align-items: center;
 }
-/* .list-item::before {
-  display: inline-block;
-  content: "";
-  width: 270px;
+/* width: 270px;
   height: 120px;
-  margin-bottom: 30px;
   background-size: 70px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--grey-background-color);
-} */
-
-/* .list-item:nth-child(1)::before {
-  background-image: url("../img/antenna\ 1.svg");
-} */
-
-/* .list-item.antenna-icon::before {
-  background-image: url("../img/antenna\ 1.svg"); }
-.list-item.clock-icon::before {
-  background-image: url("../img/clock\ 1.svg"); }
-.list-item.diagram-icon::before {
-  background-image: url("../img/diagram\ 1.svg"); }
-.list-item.astronaut-icon::before {
-  background-image: url("../img/astronaut\ 1.svg"); }
- */
+  background-position: center;*/
 
 .feature-title {
   margin-bottom: 10px;
@@ -329,14 +308,28 @@ a {
 /* svg */
 .social-list {
   display: flex;
+  height: 44px;
+  width: 44px;
 }
 .social-item {
   display: flex;
 }
-.link {
+.social-link {
+  display: block;
+  height: 44px;
+  width: 44px;
+
   fill: #afb1b8;
   text-decoration: none;
+  background-position: center;
+  border: 50%;
 }
+/* .social-link:hover,
+.social-link:focus{
+  color: var(--second-accent-color);
+  background-color: var(var(--accent-color);
+} */
+
 /* footer */
 .footer {
   background-color: var(--accent-background-color);
