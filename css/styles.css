@@ -5,7 +5,7 @@
   --second-accent-color: #ffffff;
   --black-text-color: #000000;
   --grey-data-color: rgba(255, 255, 255, 0.6);
-  --social-icons-color: #afb1b8;
+  --icons-color: #afb1b8;
 
   --primary-background-color: #ffffff;
   --accent-background-color: #2f303a;
@@ -303,16 +303,14 @@ a {
   margin-bottom: 10px;
 }
 .team-description {
+  margin-bottom: 16px;
   color: var(--secondary-text-color);
   font-weight: 400;
 }
-/* svg */
+/* svg social list*/
 .social-list {
   display: flex;
-  padding: 0;
-  margin: 0;
-  height: 44px;
-  width: 44px;
+  justify-content: center;
 }
 .social-item {
   display: flex;
@@ -322,31 +320,62 @@ a {
 .social-item:not(:last-child) {
   margin-right: 10px;
 }
-.social-link {
+
+.social-list-link {
   display: flex;
-  padding: 0;
-  height: 44px;
-  width: 44px;
   justify-content: center;
   align-items: center;
+  width: 44px;
+  height: 44px;
 
-  color: var(--social-icons-color);
-  background-position: center;
-  border: 50%;
-  border-radius: 22px;
-  text-align: center;
+  color: var(--icons-color);
+  border-radius: 44px;
 }
-.social-link:hover,
-.social-link:focus {
+.svg-icon {
+  fill: currentColor;
+}
+.social-list-link:hover,
+.social-list-link:focus {
   color: var(--second-accent-color);
   background-color: var(--accent-color);
 }
 
+/* Clients */
+.clients-list {
+  display:flex;
+}
+.clients-item {
+  display: flex;
+}
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+
+  color: var(--icons-color);
+  border: 1px solid var(--icons-color);
+  border-radius: 4px;
+}
+.client-icon {
+  fill: currentColor;
+}
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--accent-color);
+  border: 1px solid var(--blue-background-color);
+  border-radius: 4px;
+}
 /* footer */
 .footer {
   background-color: var(--accent-background-color);
 }
 .container.position {
+  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -367,6 +396,27 @@ a {
 .data {
   margin-top: 9px;
   color: var(--grey-data-color);
+}
+
+/* footer-socials svg*/
+.contacts-block {
+  display: flex;
+}
+.footer-socials {
+  display: flex;
+}
+
+.footer-list {
+  display: flex;
+}
+
+.footer-soc-title {
+  font-size: 14px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  
+  color: var(--second-accent-color);
 }
 
 /* Стили для portfolio.html */
