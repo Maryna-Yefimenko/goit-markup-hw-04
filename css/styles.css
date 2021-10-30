@@ -6,6 +6,7 @@
   --black-text-color: #000000;
   --grey-data-color: rgba(255, 255, 255, 0.6);
   --icons-color: #afb1b8;
+  --footer-soc-color: rgba(255, 255, 255, 0.1);
 
   --primary-background-color: #ffffff;
   --accent-background-color: #2f303a;
@@ -374,8 +375,10 @@ a {
 .footer {
   background-color: var(--accent-background-color);
 }
-.container.position {
+
+.position-footer {
   display: flex;
+  align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -400,25 +403,49 @@ a {
 
 /* footer-socials svg*/
 .contacts-block {
-  display: flex;
+  margin-right: 70px;
 }
-.footer-socials {
+
+.footer-soc-title {
   display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  color: var(--second-accent-color);
+  font-size: 14px;
+  line-height: 1.17;
+  text-transform: uppercase;
 }
 
 .footer-list {
   display: flex;
+  justify-content: center;
+}
+.footer-item {
+  display: flex;
+}
+.footer-item:not(:last-child) {
+  margin-right: 10px;
 }
 
-.footer-soc-title {
-  font-size: 14px;
-  line-height: 1.17;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  
-  color: var(--second-accent-color);
-}
+.footer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
 
+  color: var(--second-accent-color); 
+  background-color: var(--footer-soc-color);
+  border-radius: 44px;
+}
+.footer-svg {
+  fill: currentColor;
+}
+.footer-link:hover,
+.footer-link:focus {
+  background-color: var(--blue-background-color);
+}
 /* Стили для portfolio.html */
 /* button section */
 .filter {
