@@ -111,16 +111,17 @@ a {
 .contacts .item + .item {
   margin-left: 50px;
 }
-.contacts-link {
+.contact-link {
   display: flex;
   align-items: center;
 
   color: var(--secondary-text-color);
-  line-height: 1.17;
   font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
 }
-.contacts-link:hover,
-.contacts-link:focus {
+.contact-link:hover,
+.contact-link:focus {
   color: var(--accent-color);
 }
 
@@ -330,7 +331,7 @@ a {
   height: 44px;
 
   color: var(--icons-color);
-  border-radius: 44px;
+  border-radius: 50%;
 }
 .svg-icon {
   fill: currentColor;
@@ -373,32 +374,39 @@ a {
 }
 /* footer */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  
   background-color: var(--accent-background-color);
 }
 
 .position-footer {
   display: flex;
   align-items: baseline;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 .footer-logo {
+  display: block;
+  margin-bottom: 20px;
+
   color: var(--second-accent-color);
   font-family: var(--secondary-font);
+  font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.19;
+  line-height: 1.17;
 }
-.address-style {
-  font-style: normal;
-}
-.residence {
-  margin-top: 20px;
+
+.adress-link{
   color: var(--second-accent-color);
+  font-style: normal;
 }
 .data {
   margin-top: 9px;
+}
+.contacts-link {
   color: var(--grey-data-color);
+  font-style: normal;
+  line-height: 1.71;
 }
 
 /* footer-socials svg*/
@@ -437,7 +445,7 @@ a {
 
   color: var(--second-accent-color); 
   background-color: var(--footer-soc-color);
-  border-radius: 44px;
+  border-radius: 50%;
 }
 .footer-svg {
   fill: currentColor;
@@ -463,10 +471,12 @@ a {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+  border-radius: 4px;
 }
 .button-primary:hover,
 .button-primary:focus {
   background-color: var(--hover-background-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .button-secondary {
   color: var(--primary-text-color);
@@ -476,6 +486,7 @@ a {
 .button-secondary:focus {
   color: var(--second-accent-color);
   background-color: var(--hover-background-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* projects section*/
@@ -491,6 +502,12 @@ a {
   margin-top: 30px;
 
   background-color: var(--primary-background-color);
+}
+.card:hover,
+.card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-sizing: border-box;
+  cursor: pointer;
 }
 
 .card > .card-content {
