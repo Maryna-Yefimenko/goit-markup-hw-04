@@ -191,7 +191,7 @@ display: none;
   margin-right: auto;
   margin-left: auto;
 
-  font-style: 700;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
@@ -404,6 +404,7 @@ display: none;
 .address-link{
   color: var(--second-accent-color);
   font-style: normal;
+  cursor: pointer;
 }
 .data {
   margin-top: 9px;
@@ -470,6 +471,11 @@ display: none;
 .filter .item:not(:last-child) {
   margin-right: 8px;
 }
+
+.container.filter {
+  margin-bottom: 0;
+}
+
 .button-primary,
 .button-secondary {
   font-weight: 500;
